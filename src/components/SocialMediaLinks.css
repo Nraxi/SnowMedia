@@ -1,0 +1,16 @@
+.social-media-container {
+  display: flex;
+  gap: 70px;
+  /* Lägg till önskat mellanrum mellan ikonerna */
+}
+
+.social-icon {
+  font-size: 120px;
+  margin-bottom: 20px;
+
+
+  color: #cacaca86;
+
+
+  border-radius: 30px;
+}
