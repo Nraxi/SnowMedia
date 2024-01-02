@@ -206,16 +206,6 @@ body {
 
 }
 
-.kaPA {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  /* This will zoom in on the left side */
-}
-
-.kaPA {
-  object-position: 30% 44px;
-}
 
 .infotwo-block {
 
@@ -404,6 +394,16 @@ body {
 }
 
 @media (min-width: 300px) {
+  .kaPA {
+    width: 200%;
+    height: 200%;
+    object-fit: cover;
+    object-position: 0 10px;
+    /* This will zoom in on the left side */
+  }
+
+
+
   .profiletwo-picture {
     width: 700%;
     height: 290%;
@@ -648,6 +648,17 @@ body {
 
 
 @media only screen and (min-width: 768px) {
+  .kaPA {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* This will zoom in on the left side */
+  }
+
+  .kaPA {
+    object-position: 20% 120px;
+  }
+
   .ridertwo-block {
     margin-top: 0px;
   }
