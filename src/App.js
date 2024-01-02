@@ -104,7 +104,7 @@ const HomePage = () => (
           </div>
           <div className="infotwo-block">
             <h4>Info about this page</h4>
-            <p> Backgrounds</p>
+            <p> Background</p>
             <p>FYI:</p>
             <div className='woop'>
               <p>Pictures are taken from </p>
