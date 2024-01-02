@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { Routes, Route, Link } from 'react-router-dom';
 import Home from './components/Home';
 import './App.css';
 import onemalesnowboard from './PICS/onemalesnowboard.jpg'
@@ -43,31 +43,31 @@ const App = () => {
   }, []);
 
   return (
-    <Router>
-      <div>
-        <nav
-          className={`sticky-nav ${isScrolled ? 'scrolled' : ''} ${mobileMenuOpen ? 'mobile-open' : ''}`}
-        >
-          <div>
-            <span className={`menu-text ${isNewTextActive ? 'active' : ''} ${isScrolled ? 'scrolled' : ''}`} onClick={handleMobileMenuToggle}>
-              Meny
-            </span>
-          </div>
-          <ul>
-            <li><Link to="#start" onClick={() => { scrollToSection('start'); setMobileMenuOpen(false); }}>Start</Link></li>
-            <li><Link to="#info" onClick={() => { scrollToSection('info'); setMobileMenuOpen(false); }}>Info</Link></li>
-            <li><Link to="#riderone" onClick={() => { scrollToSection('riderone'); setMobileMenuOpen(false); }}>Rider one</Link></li>
-            <li><Link to="#ridertwo" onClick={() => { scrollToSection('ridertwo'); setMobileMenuOpen(false); }}>Rider Two</Link></li>
-            <li><Link to="#about" onClick={() => { scrollToSection('about'); setMobileMenuOpen(false); }}>About</Link></li>
-            <li><Link to="#contact" onClick={() => { scrollToSection('contact'); setMobileMenuOpen(false); }}>Contact</Link></li>
-          </ul>
-        </nav>
 
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-        </Routes>
-      </div>
-    </Router>
+    <div>
+      <nav
+        className={`sticky-nav ${isScrolled ? 'scrolled' : ''} ${mobileMenuOpen ? 'mobile-open' : ''}`}
+      >
+        <div>
+          <span className={`menu-text ${isNewTextActive ? 'active' : ''} ${isScrolled ? 'scrolled' : ''}`} onClick={handleMobileMenuToggle}>
+            Meny
+          </span>
+        </div>
+        <ul>
+          <li><Link to="#start" onClick={() => { scrollToSection('start'); setMobileMenuOpen(false); }}>Start</Link></li>
+          <li><Link to="#info" onClick={() => { scrollToSection('info'); setMobileMenuOpen(false); }}>Info</Link></li>
+          <li><Link to="#riderone" onClick={() => { scrollToSection('riderone'); setMobileMenuOpen(false); }}>Rider one</Link></li>
+          <li><Link to="#ridertwo" onClick={() => { scrollToSection('ridertwo'); setMobileMenuOpen(false); }}>Rider Two</Link></li>
+          <li><Link to="#about" onClick={() => { scrollToSection('about'); setMobileMenuOpen(false); }}>About</Link></li>
+          <li><Link to="#contact" onClick={() => { scrollToSection('contact'); setMobileMenuOpen(false); }}>Contact</Link></li>
+        </ul>
+      </nav>
+
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+      </Routes>
+    </div>
+
   );
 };
 
@@ -79,9 +79,8 @@ const HomePage = () => (
         title="Snowboard Video Background"
         id="video-background"
         src="https://www.youtube.com/embed/mBydqpToNFo?si=AFjXQa_pko0eYnc4&autoplay=1&mute=1"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"
-        allowFullScreen
         style={{ width: '100%', height: '180%', position: 'absolute', top: -100, left: 0, zIndex: -1 }}
       ></iframe>
       <div className="section-content">
@@ -211,17 +210,16 @@ const HomePage = () => (
               <iframe src="https://player.vimeo.com/video/144545554?h=367734e3fe&color=ffffff"
                 title='vimeo player'
                 width="800" height="400"
-                allow="autoplay; fullscreen; picture-in-picture"
-                allowfullscreen
+                allow="autoplay; fullscreen; "
                 className='mountaintwo'
+                frameBorder="0"
               ></iframe>
-
 
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </section >
     <section id="contact" className="custom-section">
       <div className="section-content">
         <h2>Contact</h2>
@@ -234,7 +232,7 @@ const HomePage = () => (
         <Footer />
       </div>
     </section>
-  </div>
+  </div >
 );
 
 export default App;
