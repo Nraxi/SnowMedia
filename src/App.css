@@ -470,6 +470,7 @@ body {
   }
 
   .ridertwo-block {
+    margin-top: 120px;
     order: 1;
     /* Reset the order to 1 for smaller screens */
   }
@@ -477,6 +478,7 @@ body {
 
   /* About  */
   .about-content {
+    margin-top: 290px;
     grid-template-columns: 100%;
   }
 
@@ -638,6 +640,14 @@ body {
 
 
 @media only screen and (min-width: 768px) {
+  .ridertwo-block {
+    margin-top: 0px;
+  }
+
+  .about-content {
+    margin-top: 0px;
+  }
+
   .profiletwo-picture {
     width: 700%;
     height: 290%;
@@ -739,6 +749,14 @@ body {
 
 
 @media only screen and (min-width: 1024px) {
+  .ridertwo-block {
+    margin-top: 0px;
+  }
+
+  .about-content {
+    margin-top: 0px;
+  }
+
   #contact {
     margin-top: 0px;
   }
@@ -779,6 +797,14 @@ body {
 
 @media only screen and (min-width: 1440px) {
   #contact {
+    margin-top: 0px;
+  }
+
+  .ridertwo-block {
+    margin-top: 0px;
+  }
+
+  .about-content {
     margin-top: 0px;
   }
 
