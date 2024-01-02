@@ -312,11 +312,17 @@ body {
   height: 500px;
 }
 
+@font-face {
+  font-family: 'Snowboarding';
+  src: url('../fonts/Snowboarding/Snowboarding.ttf') format('truetype');
+  /* Add other formats and font properties as needed */
+}
+
 #start h1 {
   color: rgb(164, 164, 164);
   font-size: 110px;
   font-weight: bolder;
-  font-family: Snowboarding;
+  font-family: 'Snowboarding', sans-serif;
   margin-bottom: 10px;
   margin-top: -200px;
 }
