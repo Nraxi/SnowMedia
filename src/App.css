@@ -505,6 +505,8 @@ body {
     justify-content: center;
     background-color: #000000;
     color: #e9eff3;
+    margin-top: 70px;
+    margin-bottom: 2px;
   }
 
 
@@ -607,6 +609,12 @@ body {
 }
 
 @media only screen and (min-width: 425px) {
+
+  .abouttwothree-block {
+    margin-top: 110px;
+    margin-bottom: 20px;
+  }
+
   .profiletwo-picture {
     width: 700%;
     height: 290%;
@@ -642,6 +650,11 @@ body {
 @media only screen and (min-width: 768px) {
   .ridertwo-block {
     margin-top: 0px;
+  }
+
+  .abouttwothree-block {
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
 
   .about-content {
