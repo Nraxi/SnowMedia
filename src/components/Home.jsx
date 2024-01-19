@@ -3,7 +3,7 @@ import './Home.css'
 
 function Home() {
   return (
-    <div className='dreaming'>SnowMedia, A site, where you can dream</div>
+    <div className='dreaming'>Snow Media, A site, where you can dream</div>
   )
 }
 

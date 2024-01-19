@@ -50,7 +50,7 @@ const App = () => {
       >
         <div>
           <span className={`menu-text ${isNewTextActive ? 'active' : ''} ${isScrolled ? 'scrolled' : ''}`} onClick={handleMobileMenuToggle}>
-            Meny
+            Menu
           </span>
         </div>
         <ul>
@@ -127,7 +127,7 @@ const HomePage = () => (
         <div className="riderone-content">
           <div className="riderone-block">
             <div className='RiderOneDiv'>
-              <h2>Rider, Whos this</h2>
+              <h2>Rider, Who is this</h2>
               <p>Name: Maria</p>
               <p>Age: 19</p>
               <p>From: US</p>
@@ -158,10 +158,10 @@ const HomePage = () => (
           <div className="ridertwotwo-block">
 
             <div className='RiderTwoDiv'>
-              <h2>Rider, Whos this</h2>
+              <h2>Rider, Who is this</h2>
               <p>Name: Travis</p>
               <p>Age: 34</p>
-              <p>From: SWE</p>
+              <p>Country: Sweden</p>
 
             </div>
           </div>
@@ -174,7 +174,7 @@ const HomePage = () => (
           <div className="aboutone-block">
             <div className='aboutMountain'>
               <h2>About</h2>
-              <p>HomeTown: Stockholm</p>
+              <p>Hometown: Stockholm</p>
               <p>Country: Sweden</p>
 
             </div>
@@ -195,13 +195,13 @@ const HomePage = () => (
         <div className="about-content-vid">
           <div className="abouttwothree-block">
             <div className='aboutMountain'>
-              <h2>Learn about the mountain</h2>
-              <p>Rise awarness about avalances</p>
+              <h2>Learn more about the mountain</h2>
+              <p>Raise awareness about avalanches</p>
               <p>Watch the video to learn more</p>
               <p>
-                <a href="https://vimeo.com/144545554">Know Before You Go</a>
+                <a href="https://vimeo.com/144545554">Video: Know Before You Go</a>
               </p>
-              <p><a href="https://vimeo.com/utahavalanchecenter">from Utah Avalanche Center</a></p>
+              <p><a href="https://vimeo.com/utahavalanchecenter">From: Utah Avalanche Center</a></p>
             </div>
           </div>
           <div className="aboutonethree-block">
