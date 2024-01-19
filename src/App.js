@@ -56,7 +56,7 @@ const App = () => {
         <ul>
           <li><Link to="#start" onClick={() => { scrollToSection('start'); setMobileMenuOpen(false); }}>Start</Link></li>
           <li><Link to="#info" onClick={() => { scrollToSection('info'); setMobileMenuOpen(false); }}>Info</Link></li>
-          <li><Link to="#riderone" onClick={() => { scrollToSection('riderone'); setMobileMenuOpen(false); }}>Rider one</Link></li>
+          <li><Link to="#riderone" onClick={() => { scrollToSection('riderone'); setMobileMenuOpen(false); }}>Rider One</Link></li>
           <li><Link to="#ridertwo" onClick={() => { scrollToSection('ridertwo'); setMobileMenuOpen(false); }}>Rider Two</Link></li>
           <li><Link to="#about" onClick={() => { scrollToSection('about'); setMobileMenuOpen(false); }}>About</Link></li>
           <li><Link to="#contact" onClick={() => { scrollToSection('contact'); setMobileMenuOpen(false); }}>Contact</Link></li>
